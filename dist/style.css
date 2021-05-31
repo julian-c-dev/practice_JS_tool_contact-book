@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: white;
+  color: black;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: white;
+  background-color: #343434;
+}
+
+h1 {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.book {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.book__item {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.book__input {
+  background-color: #343434;
+  outline: 0ch;
+  border: 0;
+  border-bottom: 3px solid white;
+  padding-left: 3rem;
+  color: white;
+}
+
+.book__btn {
+  margin-top: 3rem;
+  border-radius: 8px;
+  outline: 0;
+  border: 0;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+}
+
+.contact_list_titles {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: dodgerblue;
+  border-bottom: 3px solid dodgerblue;
+}
+
+.contact__records {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(0, 170, 0);
+}
+
+.contact__list .fas {
+  color: tomato;
+}
