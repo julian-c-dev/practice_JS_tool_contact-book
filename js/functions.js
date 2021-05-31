@@ -1,15 +1,19 @@
-const storeContact = (local, contact_obj) => {
-  local.setItem(contact_obj.id, JSON.stringify(contact_obj));
+// & => the record_obj is stored with a key and an string values
+const storeRecord = (local, record_obj) => {
+  local.setItem(record_obj.id, JSON.stringify(record_obj));
   window.location.href = "/"; // to refresh the window
 };
 
-const loadContact = (local, parentNode) => {
+// & => iteration of the keys from local Storage and get the items associated with the key
+const loadRecord = (local, parentNode) => {
   let keys = Object.keys(local);
   for (key of keys) {
     let contact = JSON.parse(local.getItem(key));
     createContacts(parentNode, contact, local);
   }
 };
+
+// & Create the DOM elements to display the value of the record_obj
 
 const createContacts = (parentNode, contact, local) => {
   let divContact = document.createElement("div");

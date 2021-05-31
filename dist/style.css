@@ -62,6 +62,16 @@ h1 {
   background-color: dodgerblue;
 }
 
+.book_initial_msg {
+  background-color: tomato;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
 .contact_list_titles {
   margin-top: 3rem;
   display: flex;
